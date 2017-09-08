@@ -1,0 +1,31 @@
+img {
+	width:150px;
+	height:150px;
+	border-radius:50%;
+	border-width:5px;
+	border-color:white;
+	border-style:solid;
+
+}
+
+body {
+	max-width:600px;
+}
+
+div {
+	background-color:#0084BF;
+	padding:10px;
+}
+
+.center {
+	text-align:center;	
+}
+
+.grad {
+    background: #ced8ea; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ced8ea, white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ced8ea, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ced8ea, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ced8ea, white); /* Standard syntax */
+}
+

@@ -1,0 +1,53 @@
+[05-Sep-2017 00:23:58 UTC] PHP Warning:  SQLite3::query() [<a href='sqlite3.query'>sqlite3.query</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/blog.php on line 27
+[05-Sep-2017 00:23:58 UTC] PHP Fatal error:  Call to a member function fetchArray() on a non-object in /home/classic5/public_html/blog/blog.php on line 28
+[05-Sep-2017 00:23:59 UTC] PHP Warning:  SQLite3::query() [<a href='sqlite3.query'>sqlite3.query</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/blog.php on line 27
+[05-Sep-2017 00:23:59 UTC] PHP Fatal error:  Call to a member function fetchArray() on a non-object in /home/classic5/public_html/blog/blog.php on line 28
+[05-Sep-2017 00:24:18 UTC] PHP Warning:  SQLite3::prepare() [<a href='sqlite3.prepare'>sqlite3.prepare</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/addblog.php on line 20
+[05-Sep-2017 00:24:18 UTC] PHP Fatal error:  Call to a member function bindValue() on a non-object in /home/classic5/public_html/blog/addblog.php on line 21
+[05-Sep-2017 00:28:21 UTC] PHP Warning:  SQLite3::prepare() [<a href='sqlite3.prepare'>sqlite3.prepare</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/addblog.php on line 20
+[05-Sep-2017 00:28:21 UTC] PHP Fatal error:  Call to a member function bindValue() on a non-object in /home/classic5/public_html/blog/addblog.php on line 21
+[05-Sep-2017 00:28:25 UTC] PHP Warning:  SQLite3::query() [<a href='sqlite3.query'>sqlite3.query</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/blog.php on line 27
+[05-Sep-2017 00:28:25 UTC] PHP Fatal error:  Call to a member function fetchArray() on a non-object in /home/classic5/public_html/blog/blog.php on line 28
+[05-Sep-2017 00:28:26 UTC] PHP Warning:  SQLite3::query() [<a href='sqlite3.query'>sqlite3.query</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/blog.php on line 27
+[05-Sep-2017 00:28:26 UTC] PHP Fatal error:  Call to a member function fetchArray() on a non-object in /home/classic5/public_html/blog/blog.php on line 28
+[05-Sep-2017 00:28:28 UTC] PHP Warning:  SQLite3::query() [<a href='sqlite3.query'>sqlite3.query</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/blog.php on line 27
+[05-Sep-2017 00:28:28 UTC] PHP Fatal error:  Call to a member function fetchArray() on a non-object in /home/classic5/public_html/blog/blog.php on line 28
+[05-Sep-2017 00:28:29 UTC] PHP Warning:  SQLite3::query() [<a href='sqlite3.query'>sqlite3.query</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/blog.php on line 27
+[05-Sep-2017 00:28:29 UTC] PHP Fatal error:  Call to a member function fetchArray() on a non-object in /home/classic5/public_html/blog/blog.php on line 28
+[05-Sep-2017 00:28:34 UTC] PHP Warning:  SQLite3::prepare() [<a href='sqlite3.prepare'>sqlite3.prepare</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/addblog.php on line 20
+[05-Sep-2017 00:28:34 UTC] PHP Fatal error:  Call to a member function bindValue() on a non-object in /home/classic5/public_html/blog/addblog.php on line 21
+[05-Sep-2017 00:32:19 UTC] PHP Warning:  SQLite3::prepare() [<a href='sqlite3.prepare'>sqlite3.prepare</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/addblog.php on line 20
+[05-Sep-2017 00:32:19 UTC] PHP Fatal error:  Call to a member function bindValue() on a non-object in /home/classic5/public_html/blog/addblog.php on line 21
+[05-Sep-2017 00:36:54 UTC] PHP Warning:  SQLite3::query() [<a href='sqlite3.query'>sqlite3.query</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/blog.php on line 27
+[05-Sep-2017 00:36:54 UTC] PHP Fatal error:  Call to a member function fetchArray() on a non-object in /home/classic5/public_html/blog/blog.php on line 28
+[05-Sep-2017 00:40:12 UTC] PHP Warning:  SQLite3::query() [<a href='sqlite3.query'>sqlite3.query</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/blog.php on line 27
+[05-Sep-2017 00:40:12 UTC] PHP Fatal error:  Call to a member function fetchArray() on a non-object in /home/classic5/public_html/blog/blog.php on line 28
+[05-Sep-2017 00:44:00 UTC] PHP Warning:  SQLite3::query() [<a href='sqlite3.query'>sqlite3.query</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/blog.php on line 27
+[05-Sep-2017 00:44:00 UTC] PHP Fatal error:  Call to a member function fetchArray() on a non-object in /home/classic5/public_html/blog/blog.php on line 28
+[05-Sep-2017 00:44:07 UTC] PHP Warning:  SQLite3::prepare() [<a href='sqlite3.prepare'>sqlite3.prepare</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/addblog.php on line 20
+[05-Sep-2017 00:44:07 UTC] PHP Fatal error:  Call to a member function bindValue() on a non-object in /home/classic5/public_html/blog/addblog.php on line 21
+[05-Sep-2017 00:48:18 UTC] PHP Warning:  SQLite3::prepare() [<a href='sqlite3.prepare'>sqlite3.prepare</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/addblog.php on line 20
+[05-Sep-2017 00:48:18 UTC] PHP Fatal error:  Call to a member function bindValue() on a non-object in /home/classic5/public_html/blog/addblog.php on line 21
+[05-Sep-2017 00:48:27 UTC] PHP Warning:  SQLite3::query() [<a href='sqlite3.query'>sqlite3.query</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/blog.php on line 27
+[05-Sep-2017 00:48:27 UTC] PHP Fatal error:  Call to a member function fetchArray() on a non-object in /home/classic5/public_html/blog/blog.php on line 28
+[05-Sep-2017 00:48:31 UTC] PHP Warning:  SQLite3::prepare() [<a href='sqlite3.prepare'>sqlite3.prepare</a>]: Unable to prepare statement: 1, no such table: blog in /home/classic5/public_html/blog/addblog.php on line 20
+[05-Sep-2017 00:48:31 UTC] PHP Fatal error:  Call to a member function bindValue() on a non-object in /home/classic5/public_html/blog/addblog.php on line 21
+[05-Sep-2017 01:13:26 UTC] PHP Notice:  Undefined index: id in /home/classic5/public_html/blog/blog.php on line 29
+[05-Sep-2017 01:13:32 UTC] PHP Warning:  SQLite3::querySingle() [<a href='sqlite3.querysingle'>sqlite3.querysingle</a>]: Unable to prepare statement: 1, near &quot;=&quot;: syntax error in /home/classic5/public_html/blog/viewblog.php on line 15
+[05-Sep-2017 01:13:35 UTC] PHP Notice:  Undefined index: id in /home/classic5/public_html/blog/blog.php on line 29
+[05-Sep-2017 01:13:38 UTC] PHP Warning:  SQLite3::querySingle() [<a href='sqlite3.querysingle'>sqlite3.querysingle</a>]: Unable to prepare statement: 1, near &quot;=&quot;: syntax error in /home/classic5/public_html/blog/viewblog.php on line 15
+[05-Sep-2017 01:13:40 UTC] PHP Notice:  Undefined index: id in /home/classic5/public_html/blog/blog.php on line 29
+[05-Sep-2017 01:13:50 UTC] PHP Notice:  Undefined index: id in /home/classic5/public_html/blog/blog.php on line 29
+[05-Sep-2017 01:13:50 UTC] PHP Notice:  Undefined index: id in /home/classic5/public_html/blog/blog.php on line 29
+[05-Sep-2017 01:13:52 UTC] PHP Warning:  SQLite3::querySingle() [<a href='sqlite3.querysingle'>sqlite3.querysingle</a>]: Unable to prepare statement: 1, near &quot;=&quot;: syntax error in /home/classic5/public_html/blog/viewblog.php on line 15
+[05-Sep-2017 01:13:55 UTC] PHP Notice:  Undefined index: id in /home/classic5/public_html/blog/blog.php on line 29
+[05-Sep-2017 01:13:55 UTC] PHP Notice:  Undefined index: id in /home/classic5/public_html/blog/blog.php on line 29
+[05-Sep-2017 01:14:06 UTC] PHP Warning:  SQLite3::querySingle() [<a href='sqlite3.querysingle'>sqlite3.querysingle</a>]: Unable to prepare statement: 1, near &quot;=&quot;: syntax error in /home/classic5/public_html/blog/viewblog.php on line 15
+[05-Sep-2017 01:14:34 UTC] PHP Warning:  SQLite3::querySingle() [<a href='sqlite3.querysingle'>sqlite3.querysingle</a>]: Unable to prepare statement: 1, near &quot;=&quot;: syntax error in /home/classic5/public_html/blog/editblog.php on line 8
+[06-Sep-2017 04:05:08 UTC] PHP Warning:  SQLite3::exec() [<a href='sqlite3.exec'>sqlite3.exec</a>]: near &quot;s&quot;: syntax error in /home/classic5/public_html/blog/updateblog.php on line 10
+[06-Sep-2017 04:05:33 UTC] PHP Warning:  SQLite3::exec() [<a href='sqlite3.exec'>sqlite3.exec</a>]: near &quot;s&quot;: syntax error in /home/classic5/public_html/blog/updateblog.php on line 10
+[06-Sep-2017 04:05:34 UTC] PHP Warning:  SQLite3::exec() [<a href='sqlite3.exec'>sqlite3.exec</a>]: near &quot;s&quot;: syntax error in /home/classic5/public_html/blog/updateblog.php on line 10
+[06-Sep-2017 04:05:34 UTC] PHP Warning:  SQLite3::exec() [<a href='sqlite3.exec'>sqlite3.exec</a>]: near &quot;s&quot;: syntax error in /home/classic5/public_html/blog/updateblog.php on line 10
+[06-Sep-2017 04:54:29 UTC] PHP Warning:  SQLite3::exec() [<a href='sqlite3.exec'>sqlite3.exec</a>]: near &quot;s&quot;: syntax error in /home/classic5/public_html/blog/updateblog.php on line 10
+[06-Sep-2017 04:54:39 UTC] PHP Warning:  SQLite3::exec() [<a href='sqlite3.exec'>sqlite3.exec</a>]: near &quot;s&quot;: syntax error in /home/classic5/public_html/blog/updateblog.php on line 10
+[06-Sep-2017 04:56:26 UTC] PHP Warning:  SQLite3::exec() [<a href='sqlite3.exec'>sqlite3.exec</a>]: near &quot;s&quot;: syntax error in /home/classic5/public_html/blog/updateblog.php on line 10
