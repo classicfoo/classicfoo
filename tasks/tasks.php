@@ -10,11 +10,13 @@
 		<h1>Tasks</h1>
 
 		<!--Actions-->
-		<div id="actions" class="btn-group">
-		  <button type="button" class="btn btn-primary">Add</button>
-		  <button type="button" class="btn btn-primary">Edit</button>
-		  <button type="button" class="btn btn-primary">Delete</button>
-		  <button type="button" class="btn btn-success">Done</button>
+		<div id="actions"> 
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary">Add</button>
+				<button type="button" class="btn btn-primary">Edit</button>
+				<button type="button" class="btn btn-primary">Delete</button>
+			</div>
+			<button type="button" class="btn btn-success">Done</button>
 		</div>
 		<!--Task list-->	
 		<table class="table table-striped table-bordered">
