@@ -14,7 +14,7 @@
 		  <button type="button" class="btn btn-primary">Add</button>
 		  <button type="button" class="btn btn-primary">Edit</button>
 		  <button type="button" class="btn btn-primary">Delete</button>
-		  <button type="button" class="btn btn-primary">Done</button>
+		  <button type="button" class="btn btn-success">Done</button>
 		</div>
 		<!--Task list-->	
 		<ul>
