@@ -12,9 +12,9 @@
 		<!--Actions-->
 		<div id="actions"> 
 			<div class="btn-group">
-				<button type="button" class="btn btn-primary" id="add">Add</button>
+				<button type="button" class="btn btn-primary" id="btnAdd">Add</button>
 				<button type="button" class="btn btn-primary">Edit</button>
-				<button type="button" class="btn btn-primary">Delete</button>
+				<button type="button" class="btn btn-primary" id="btnDelete">Delete</button>
 			</div>
 			<button type="button" class="btn btn-success">Done</button>
 		</div>
@@ -36,7 +36,7 @@
 					$id = $row['id'];
 					$subject = $row['subject'];
 					$contents = $row['contents'];
-					echo "<tr class='clickable-row'><td><a href='viewtask.php?id=$id'</a>$subject</td><td></td></tr>";
+					echo "<tr id='$id' class='clickable-row'><td><a href='viewtask.php?id=$id'</a>$subject</td><td></td></tr>";
 				}
 			?>
 			</tbody>
