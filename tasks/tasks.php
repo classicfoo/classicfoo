@@ -12,7 +12,7 @@
 		<!--Actions-->
 		<div id="actions"> 
 			<div class="btn-group">
-				<button onclick="addtask.php" type="button" class="btn btn-primary">Add</button>
+				<button type="button" class="btn btn-primary" id="add">Add</button>
 				<button type="button" class="btn btn-primary">Edit</button>
 				<button type="button" class="btn btn-primary">Delete</button>
 			</div>
@@ -45,6 +45,7 @@
 
 		<a href="../index.html">Back</a>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="script.js"></script>
 
 	</body>
 </html>
