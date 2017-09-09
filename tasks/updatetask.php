@@ -1,12 +1,11 @@
 <?php
+
+//get task
 $id = $_POST['id'];
 $subject = $_POST['subject'];
 $contents = $_POST['contents'];
 $due = $_POST['due'];
-//echo $id;
-//echo $subject;
-//echo $contents;
-//echo $due;
+
 $db = new SQLite3('../data.db');
 
 $sql = "UPDATE task set subject=:subject, contents=:contents, due=:due where id=:id;";
@@ -19,5 +18,5 @@ $stmt->execute();
 
 $db->close();
 
-header('Location: viewtask.php?id='.$id);
+header('Location: tasks.php');
 ?>
