@@ -13,7 +13,7 @@
 		<div id="actions"> 
 			<div class="btn-group">
 				<button type="button" class="btn btn-primary" id="btnAdd">Add</button>
-				<button type="button" class="btn btn-primary">Edit</button>
+				<button type="button" class="btn btn-primary"id="btnEdit">Edit</button>
 				<button type="button" class="btn btn-primary" id="btnDelete">Delete</button>
 			</div>
 			<button type="button" class="btn btn-success">Done</button>
