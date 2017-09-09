@@ -12,7 +12,7 @@
 		<!--Actions-->
 		<div id="actions"> 
 			<div class="btn-group">
-				<button type="button" class="btn btn-primary">Add</button>
+				<button onclick="addtask.php" type="button" class="btn btn-primary">Add</button>
 				<button type="button" class="btn btn-primary">Edit</button>
 				<button type="button" class="btn btn-primary">Delete</button>
 			</div>
@@ -44,6 +44,7 @@
 		</table>
 
 		<a href="../index.html">Back</a>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	</body>
 </html>
