@@ -17,7 +17,7 @@
 		  <button type="button" class="btn btn-success">Done</button>
 		</div>
 		<!--Task list-->	
-		<table class="table table-striped">
+		<table class="table table-striped table-bordered">
 			<thead>
 				<tr>
 					<th>Subject</th>	
