@@ -10,7 +10,7 @@ $('#btnAdd').on('click', function (e) {
 
 //delete task button functionality
 $('#btnDelete').on('click', function (e) {
-	location.href=console.log("deletetask.php?id="+$("#tasklist tr.table-info").attr('id'));
+	location.href="deletetask.php?id="+$("#tasklist tr.table-info").attr('id');
 });
 
 
