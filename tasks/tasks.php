@@ -17,7 +17,15 @@
 		  <button type="button" class="btn btn-success">Done</button>
 		</div>
 		<!--Task list-->	
-		<ul>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Subject</th>	
+					<th>Due</th>
+				</tr>
+			</thead>
+			<tbody>
+				
 
 			<?php
 				$db = new SQlite3('../data.db');
@@ -26,11 +34,12 @@
 					$id = $row['id'];
 					$subject = $row['subject'];
 					$contents = $row['contents'];
-					echo "<li><a href='viewtask.php?id=$id'</a>$subject</li></br>";
+					echo "<tr><th><a href='viewtask.php?id=$id'</a>$subject</th></tr>";
 				}
 			?>
+			</tbody>
 
-		</ul>
+		</table>
 
 		<a href="../index.html">Back</a>
 
