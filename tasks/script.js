@@ -33,8 +33,24 @@ $('#btnEdit').on('click', function (e) {
 
 //delete task button functionality
 $('#btnDelete').on('click', function (e) {
-	location.href="deletetask.php?id="+$("#tasklist tr.table-info").attr('id');
+
+	var selected_row = $("#tasklist tr.table-info");
+
+	//delete task and remove row from page 
+	$.ajax({
+		url: "deletetask.php?id="+ selected_row.attr('id'),
+	   	success: function(result) {
+
+			//hide element user wants to delete.
+			selected_row.fadeOut(1000,function(){ 
+				selected_row.remove();                    
+			});
+		}
+	});
 });
+
+//	location.href="deletetask.php?id="+$("#tasklist tr.table-info").attr('id');
+//});
 
 
 //make table rows selectable
