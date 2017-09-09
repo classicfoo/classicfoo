@@ -1,3 +1,15 @@
+//validate fields before submit
+$('form').on('submit', function(e) {
+	e.preventDefault();
+	if($('#due')[0].value===undefined) {
+		console.log($('#due').value);
+		alert('Please enter a due date');
+	}else{
+		this.submit(); //now submit the form
+	}
+});
+
+
 //unfocus button after press
 $(".btn").mouseup(function(){
 	$(this).blur();
