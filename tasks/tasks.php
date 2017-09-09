@@ -19,7 +19,7 @@
 			<button type="button" class="btn btn-success">Done</button>
 		</div>
 		<!--Task list-->	
-		<table class="table table-striped table-bordered">
+		<table id="tasklist" class="table table-striped table-bordered">
 			<thead>
 				<tr>
 					<th>Subject</th>	
@@ -36,7 +36,7 @@
 					$id = $row['id'];
 					$subject = $row['subject'];
 					$contents = $row['contents'];
-					echo "<tr><td><a href='viewtask.php?id=$id'</a>$subject</td><td></td></tr>";
+					echo "<tr class='clickable-row'><td><a href='viewtask.php?id=$id'</a>$subject</td><td></td></tr>";
 				}
 			?>
 			</tbody>
