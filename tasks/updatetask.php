@@ -2,11 +2,21 @@
 $id = $_POST['id'];
 $subject = $_POST['subject'];
 $contents = $_POST['contents'];
-echo $id;
-echo $subject;
-echo $contents;
+$due = $_POST['due'];
+//echo $id;
+//echo $subject;
+//echo $contents;
+//echo $due;
 $db = new SQLite3('../data.db');
-$db->exec('update task set subject=\''.$subject.'\', contents=\''.$contents.'\' where id='.$id.';');
+
+$sql = "UPDATE task set subject=:subject, contents=:contents, due=:due where id=:id;";
+$stmt = $db->prepare($sql);
+$stmt->bindValue(':subject', $subject);
+$stmt->bindValue(':contents', $contents);
+$stmt->bindValue(':due', $due);
+$stmt->bindValue(':id', $id);
+$stmt->execute();
+
 $db->close();
 
 header('Location: viewtask.php?id='.$id);
