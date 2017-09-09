@@ -1,2 +1,2 @@
 # classicfoo
-My personal website.
+My personal website. classicfoo.xyz
