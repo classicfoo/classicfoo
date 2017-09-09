@@ -34,7 +34,7 @@
 					$id = $row['id'];
 					$subject = $row['subject'];
 					$contents = $row['contents'];
-					echo "<tr><th><a href='viewtask.php?id=$id'</a>$subject</th></tr>";
+					echo "<tr><td><a href='viewtask.php?id=$id'</a>$subject</td><td></td></tr>";
 				}
 			?>
 			</tbody>
