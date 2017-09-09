@@ -1,7 +1,7 @@
 //validate fields before submit
 $('form').on('submit', function(e) {
 	e.preventDefault();
-	if($('#due')[0].value===undefined) {
+	if($('#due')[0].value==="") {
 		console.log($('#due').value);
 		alert('Please enter a due date');
 	}else{
