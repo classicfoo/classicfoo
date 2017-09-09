@@ -1,2 +1,2 @@
 # classicfoo
-My personal website. [classicfoo.xyz]{classicfoo.xyz)
+My personal website. [classicfoo.xyz](classicfoo.xyz)
