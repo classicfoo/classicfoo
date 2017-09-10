@@ -1,9 +1,18 @@
 #actions {
-	margin: 10 10 20 0;
+	margin: 10 10 10 0;
 }
 
 body {
-	margin: 20 20 20 20;
+	padding: 20 20 20 20;
+	padding-top:132;
 } 
 
-
+nav {
+	background-color:white;
+	padding: 20 20 10 20;
+}
+/*
+#tasklist {
+	padding-top:70px;
+}
+*/
