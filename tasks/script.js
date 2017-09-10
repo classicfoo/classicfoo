@@ -62,3 +62,12 @@ $('#tasklist').on('click', '.clickable-row', function(event) {
 		}
 });
 
+//on any page load, look for #due and insert default date
+if($("#due").length > 0){
+	$(document).ready(function(){
+		$('#due')[0].valueAsDate = new Date();
+	});
+}
+
+
+
