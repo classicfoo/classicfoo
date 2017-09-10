@@ -53,7 +53,9 @@
 
 		</table>
 
-		<a href="../index.html">Back</a>
+		<!-- back link no longer needed because now we have breadcrumbs yay!-->
+		<!--<a href="../index.html">Back</a>-->
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="script.js"></script>
 
