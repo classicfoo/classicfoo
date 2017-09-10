@@ -3,16 +3,20 @@
 }
 
 body {
-	padding: 20 20 20 20;
-	padding-top:132;
+	padding: 180 20 20 20;
 } 
+
+#tasklist {
+	margin-bottom: 0;
+}
+
+#pageHeading {
+	margin-top:0;
+}
 
 nav {
 	background-color:white;
-	padding: 20 20 10 20;
+	padding: 20 20 0 20;
+	border-bottom-width:0;
 }
-/*
-#tasklist {
-	padding-top:70px;
-}
-*/
+

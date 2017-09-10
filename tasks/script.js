@@ -1,3 +1,4 @@
+
 //validate fields before submit
 $('form').on('submit', function(e) {
 	e.preventDefault();
@@ -8,7 +9,6 @@ $('form').on('submit', function(e) {
 		this.submit(); //now submit the form
 	}
 });
-
 
 //unfocus button after press
 $(".btn").mouseup(function(){
@@ -22,7 +22,7 @@ $('#btnAdd').on('click', function (e) {
 
 //edit task button functionality
 $('#btnEdit').on('click', function (e) {
-	var id = $("#tasklist tr.table-info").attr('id')
+	var id = $("#tasklist tr.info").attr('id')
 	console.log(id);
 	if(id===undefined) {
 		alert("please select a task first");
@@ -33,32 +33,39 @@ $('#btnEdit').on('click', function (e) {
 
 //delete task button functionality
 $('#btnDelete').on('click', function (e) {
+	var id = $("#tasklist tr.info").attr('id')
+	console.log(id);
+	if(id===undefined) {
+		alert("please select a task first");
+	}
+   	else {
+		var selected_row = $("#tasklist tr.info");
 
-	var selected_row = $("#tasklist tr.table-info");
+		//delete task and remove row from page 
+		$.ajax({
+			url: "deletetask.php?id="+ selected_row.attr('id'),
+			success: function(result) {
 
-	//delete task and remove row from page 
-	$.ajax({
-		url: "deletetask.php?id="+ selected_row.attr('id'),
-	   	success: function(result) {
-
-			//hide element user wants to delete.
-			selected_row.fadeOut(300,function(){ 
-				selected_row.remove();                    
-			});
-		}
-	});
+				//hide element user wants to delete.
+				selected_row.fadeOut(300,function(){ 
+					selected_row.remove();                    
+				});
+			}
+		});
+	}
 });
 
-//	location.href="deletetask.php?id="+$("#tasklist tr.table-info").attr('id');
+//	location.href="deletetask.php?id="+$("#tasklist tr.info").attr('id');
 //});
 
 
 //make table rows selectable
 $('#tasklist').on('click', '.clickable-row', function(event) {
-		if($(this).hasClass('table-info')){
-			$(this).removeClass('table-info'); 
+console.log('hi');
+		if($(this).hasClass('info')){
+			$(this).removeClass('info'); 
 		} else {
-			$(this).addClass('table-info').siblings().removeClass('table-info');
+			$(this).addClass('info').siblings().removeClass('info');
 		}
 });
 

@@ -1,11 +1,21 @@
+<!DOCTYPE html>
+<html>
+
 <head>
 	<meta name="viewport" content="width=device-width">
 </head>
 
-<h2>Add Task</h2>
-<form action="addtask.php" method="POST">
-	Subject <br> <br> <input type="text" name="subject" style="width:100%" autofocus> <br> <br>
-	Due <br> <br> <input type="date" name="due"> <br> <br>
-	Contents <br> <br> <textarea rows="10" style="width:100%" name="contents"></textarea> <br> <br>
-	<input type="submit" value="Submit">
-</form>
+<body>
+	<h2>Add Task</h2>
+	<form action="addtask.php" method="POST">
+		Subject <br> <br> <input type="text" name="subject" style="width:100%" autofocus> <br> <br>
+		Due <br> <br> <input type="date" id="due" name="due"> <br> <br>
+		Contents <br> <br> <textarea rows="10" style="width:100%" name="contents"></textarea> <br> <br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+
+</body>
+</html>
