@@ -18,9 +18,7 @@
 					</div>
 					<button type="button" class="btn btn-success">Done</button>
 				</div>
-
 		</nav>
-
 
 		<!--Task list-->	
 		<table id="tasklist" class="table table-striped table-bordered">
@@ -35,7 +33,7 @@
 
 			<?php
 				$db = new SQlite3('../data.db');
-				$results = $db->query('SELECT * FROM task order by subject asc');
+				$results = $db->query('SELECT * FROM task order by due asc');
 				while ($row = $results->fetchArray()) {
 					$id = $row['id'];
 					$subject = $row['subject'];
