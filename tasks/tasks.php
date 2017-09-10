@@ -16,7 +16,7 @@
 						<button type="button" class="btn btn-primary"id="btnEdit">Edit</button>
 						<button type="button" class="btn btn-primary" id="btnDelete">Delete</button>
 					</div>
-					<button type="button" class="btn btn-success">Done</button>
+					<!--<button type="button" class="btn btn-success">Done</button>-->
 				</div>
 		</nav>
 
