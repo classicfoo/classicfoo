@@ -21,7 +21,6 @@
 					<button type="button" class="btn btn-primary"id="btnEdit">Edit</button>
 					<button type="button" class="btn btn-primary" id="btnDelete">Delete</button>
 				</div>
-				<!--<button type="button" class="btn btn-success">Done</button>-->
 			</div>
 	</nav>
 
@@ -40,7 +39,7 @@
 				
 			<?php
 				$db = new SQlite3('../data.db');
-				$results = $db->query('SELECT * FROM task order by due asc');
+				$results = $db->query('SELECT * FROM task order by due asc, id desc');
 				while ($row = $results->fetchArray()) {
 					$id = $row['id'];
 					$subject = $row['subject'];
@@ -50,11 +49,7 @@
 				}
 			?>
 			</tbody>
-
 		</table>
-
-		<!-- back link no longer needed because now we have breadcrumbs yay!-->
-		<!--<a href="../index.html">Back</a>-->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="script.js"></script>
