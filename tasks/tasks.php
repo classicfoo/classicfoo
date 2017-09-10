@@ -39,7 +39,7 @@
 				
 			<?php
 				$db = new SQlite3('../data.db');
-				$results = $db->query('SELECT * FROM task order by due asc, id desc');
+				$results = $db->query('SELECT * FROM task order by due asc, id asc');
 				while ($row = $results->fetchArray()) {
 					$id = $row['id'];
 					$subject = $row['subject'];
