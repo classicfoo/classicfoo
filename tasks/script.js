@@ -42,7 +42,7 @@ $('#btnDelete').on('click', function (e) {
 	   	success: function(result) {
 
 			//hide element user wants to delete.
-			selected_row.fadeOut(1000,function(){ 
+			selected_row.fadeOut(300,function(){ 
 				selected_row.remove();                    
 			});
 		}
