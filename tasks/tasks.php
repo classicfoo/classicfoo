@@ -10,7 +10,7 @@
 			<h1 id="pageHeading">Tasks</h1>
 
 			<ol class="breadcrumb">
-				<li><a href="#">Home</a></li>
+				<li><a href="../index.html">Home</a></li>
 				<li class="active">Tasks</li>
 			</ol>	
 
