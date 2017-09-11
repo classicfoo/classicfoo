@@ -1,0 +1,22 @@
+#actions {
+	margin: 10 10 10 0;
+}
+
+body {
+	padding: 180 20 20 20;
+} 
+
+#tasklist {
+	margin-bottom: 0;
+}
+
+#pageHeading {
+	margin-top:0;
+}
+
+nav {
+	background-color:white;
+	padding: 20 20 0 20;
+	border-bottom-width:0;
+}
+

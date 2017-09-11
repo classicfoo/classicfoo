@@ -4,12 +4,23 @@
 
 	$subject = $_POST['subject'];
 	$contents = $_POST['contents'];
+	$due= $_POST['due'];
+
+	//echo $due;
 
 	if(!$subject=="") { 
-		$db->exec("insert into task (subject, contents) values ('". $subject . "', '". $contents ."');");
-	}
+	
+	$sql = 'INSERT INTO task(subject, contents, due) VALUES(:subject, :contents, :due)';
+	$stmt = $db->prepare($sql);
+	$stmt->bindValue(':subject', $subject);
+	$stmt->bindValue(':contents', $contents);
+	$stmt->bindValue(':due', $due);
+	$stmt->execute();
 
 	$db->close();
+
+	//$db->exec("insert into task (subject, contents, due) values ('". $subject . "', '". $contents ."');");
+	}	
 
 	header('Location: tasks.php');
 ?>
