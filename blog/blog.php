@@ -30,10 +30,11 @@
 				$subject = $row['subject'];
 				$contents = $row['contents'];
 				$date = $row['date'];
+				$date2 = substr($date, 0, strlen($date)-18);
 				echo "
 				<div class='postPadding'>
 					<div class='post'>
-						<p>$date</p>
+						<p>$date2</p>
 						<a href='viewblog.php?id=$id'>$contents</a>
 					</div>
 				</div>
