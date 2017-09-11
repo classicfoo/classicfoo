@@ -1,3 +1,0 @@
-# SNIPPETS
-
-## HTML
