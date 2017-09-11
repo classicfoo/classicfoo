@@ -6,18 +6,6 @@
 	<body>
 		<h2>Blog</h2>
 		<?php
-		/*
-			$files = scandir('.');
-			foreach($files as $file) {
-				$info = pathinfo($file);
-				if ($info["extension"] == "html") { 
-					echo "<a href=$file>$file</a> <br> <br/>";
-				}
-			}
-
-		*/
-		?>
-
 
 		<a href="addblog.html"><button>Add Blog</button></a>
 
