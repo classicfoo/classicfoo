@@ -13,3 +13,21 @@
 
 ### External Script (script.js)
 `<script src="script.js"></script>`
+
+### Sticky navbar
+`<nav class="navbar navbar-fixed-top"></nav>`
+
+## PHP
+```
+<?php
+  $db = new SQlite3('../data.db');
+  $results = $db->query('SELECT * FROM task order by due asc, id asc');
+  while ($row = $results->fetchArray()) {
+    $id = $row['id'];
+    $subject = $row['subject'];
+    $contents = $row['contents'];
+    $due = $row['due'];
+    echo "<tr id='$id' class='clickable-row'><td><a href='viewtask.php?id=$id'</a>$subject</td><td>$due</td></tr>";
+  }
+?>
+```
