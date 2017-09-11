@@ -21,7 +21,7 @@
 		
 		<?php
 			$db = new SQlite3('../data.db');
-			$results = $db->query('SELECT * FROM blog order by subject asc');
+			$results = $db->query('SELECT * FROM blog order by id desc');
 
 			echo "<div>";
 
