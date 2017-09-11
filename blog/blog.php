@@ -1,27 +1,49 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 		<link rel="stylesheet" type="text/css" href="style.css?t=[timestamp]">
 	</head>
 	
-	<body>
-		<h2>Blog</h2>
-		<?php
-
-		<a href="addblog.html"><button>Add Blog</button></a>
-
-		<ul>
+	<body class="center">
+		<div>
+		<nav class="navbar navbar-fixed-top center"> 
+			<h1>Microblog</h1>		
+			<a href="addblog.html"><button type='button' id="addPost" class=' btn btn-primary'>Post</button></a>
+			<ol class="breadcrumb">
+				<li><a href="../index.html">Home</a></li>
+				<li class="active">Microblog</li>
+			</ol>
+		</nav>
+		</div>
+		
+		<div id="padding_above_first_post"></div>
+		
 		<?php
 			$db = new SQlite3('../data.db');
 			$results = $db->query('SELECT * FROM blog order by subject asc');
+
+			echo "<div>";
+
 			while ($row = $results->fetchArray()) {
 				$id = $row['id'];
 				$subject = $row['subject'];
 				$contents = $row['contents'];
-				echo "<li><a href='viewblog.php?id=$id'</a>$subject</li></br>";
+				$date = $row['date'];
+				echo "
+				<div class='postPadding'>
+					<div class='post'>
+						<p>$date</p>
+						<a href='viewblog.php?id=$id'>$contents</a>
+					</div>
+				</div>
+				</br>";
 			}
+
+			echo "</div>";
 		?>
-		</ul>
+
 		<br/><br/>
-		<a href="../index.html">Back</a>
+		<!--<a href="../index.html">Back</a>-->
 	</body>
 </html>
