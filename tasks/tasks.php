@@ -44,6 +44,31 @@
 					$subject = $row['subject'];
 					$contents = $row['contents'];
 					$due = $row['due'];
+
+					//Calculate and set alias for due date ($due)
+
+					$today = new DateTime(); // This object represents current date/time
+					$today->setTime( 0, 0, 0 ); // reset time part, to prevent partial comparison
+
+					$match_date = DateTime::createFromFormat( "Y-m-d", $due );
+					$match_date->setTime( 0, 0, 0 ); // reset time part, to prevent partial comparison
+
+					$diff = $today->diff( $match_date );
+					$diffDays = (integer)$diff->format( "%R%a" ); // Extract days count in interval
+
+					switch( $diffDays ) {
+						case 0:
+							$due = "Today";
+							break;
+						case +1:
+							$due = "Tomorrow";
+							break;
+						default:
+							if($diffDays < 0) {
+								$due = "Overdue";
+							}
+					}
+
 					echo "<tr id='$id' class='clickable-row'><td><a href='viewtask.php?id=$id'</a>$subject</td><td>$due</td></tr>";
 				}
 			?>

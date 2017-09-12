@@ -55,10 +55,6 @@ $('#btnDelete').on('click', function (e) {
 	}
 });
 
-//	location.href="deletetask.php?id="+$("#tasklist tr.info").attr('id');
-//});
-
-
 //make table rows selectable
 $('#tasklist').on('click', '.clickable-row', function(event) {
 console.log('hi');
