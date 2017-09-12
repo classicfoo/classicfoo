@@ -35,7 +35,9 @@
 				<div class='postPadding'>
 					<div class='post'>
 						<p>$date2</p>
-						<a href='viewblog.php?id=$id'>$contents</a>
+						<div id='content_container'>
+							<a href='viewblog.php?id=$id'>$contents</a>
+						</div>
 					</div>
 				</div>
 				</br>";
@@ -45,6 +47,8 @@
 		?>
 
 		<br/><br/>
-		<!--<a href="../index.html">Back</a>-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="script.js"></script>
+
 	</body>
 </html>

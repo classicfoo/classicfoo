@@ -1,31 +1,26 @@
-img {
-	width:150px;
-	height:150px;
-	border-radius:50%;
-	border-width:5px;
-	border-color:white;
-	border-style:solid;
+#classicfoo-logo {
+	width: 200px;
+	display:block;	
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
+.menu-item {
+	display:block;
+	background-color: white;
+	color:black;
+	text-align:center;
+	font-size:30px;
+	margin:10px;
 }
 
 body {
-	max-width:600px;
+	background-color: white;
+	font-family: 'Caveat', cursive;
 }
 
-div {
-	background-color:#0084BF;
-	padding:10px;
+a:hover {
+    color: hotpink;
 }
-
-.center {
-	text-align:center;	
-}
-
-.grad {
-    background: #ced8ea; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#ced8ea, white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#ced8ea, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#ced8ea, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#ced8ea, white); /* Standard syntax */
-}
-

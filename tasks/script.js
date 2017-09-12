@@ -65,8 +65,8 @@ console.log('hi');
 		}
 });
 
-//on any page load, look for #due and insert default date
-if($("#due").length > 0){
+//look for add task due date and insert default date
+if($(".default-due").length > 0){
 	$(document).ready(function(){
 		$('#due')[0].valueAsDate = new Date();
 	});

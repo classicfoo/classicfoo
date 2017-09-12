@@ -1,0 +1,26 @@
+xmp {
+    font-family: monospace;
+    font-size:12px;
+    white-space: pre;
+    background-color:rgb(247, 255, 245);
+    color:#656565;
+    display:block;
+    padding:10px;    
+    overflow:auto;
+}
+
+body {
+    padding:10px;
+}
+
+#snippet {
+    background-color:#efefef;
+    padding:10px; 
+    margin-top:10px;  
+}
+
+/*
+xmp:hover {
+    border:1px solid gray; 
+    overflow:auto;
+}*/
