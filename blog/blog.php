@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width">
@@ -21,7 +23,7 @@
 		
 		<?php
 			$db = new SQlite3('../data.db');
-			$results = $db->query('SELECT * FROM blog order by id desc');
+			$results = $db->query("SELECT * FROM blog where username='".$_SESSION['username']."' order by id desc;" );
 
 			echo "<div>";
 

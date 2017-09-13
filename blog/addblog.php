@@ -1,5 +1,7 @@
 <?php
 
+	session_start();
+
 	$db = new SQlite3('../data.db');
 
 	$subject = htmlspecialchars($_POST['subject']);
@@ -11,11 +13,12 @@
 	$dt->setTimestamp($timestamp); 
 	$date = $dt->format('D, j M Y, h:i A, '). $tz;
 
-	$sql = 'INSERT INTO blog (subject, contents, date) VALUES(:subject, :contents, :date)';
+	$sql = 'INSERT INTO blog (subject, contents, date, username) VALUES(:subject, :contents, :date, :username)';
 	$stmt = $db->prepare($sql);
 	$stmt->bindValue(':subject', $subject);
 	$stmt->bindValue(':contents', $contents);
 	$stmt->bindValue(':date', $date);
+	$stmt->bindValue(':username', $_SESSION['username']);
 	$stmt->execute();
 
 
