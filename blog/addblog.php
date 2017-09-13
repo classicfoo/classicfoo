@@ -13,9 +13,8 @@
 	$dt->setTimestamp($timestamp); 
 	$date = $dt->format('D, j M Y, h:i A, '). $tz;
 
-	$sql = 'INSERT INTO blog (subject, contents, date, username) VALUES(:subject, :contents, :date, :username)';
+	$sql = 'INSERT INTO blog (contents, date, username) VALUES(:contents, :date, :username)';
 	$stmt = $db->prepare($sql);
-	$stmt->bindValue(':subject', $subject);
 	$stmt->bindValue(':contents', $contents);
 	$stmt->bindValue(':date', $date);
 	$stmt->bindValue(':username', $_SESSION['username']);
