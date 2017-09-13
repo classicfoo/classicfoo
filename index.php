@@ -17,10 +17,12 @@
 		<img id="classicfoo-logo" src="classicfoo-logo.png"></img>
 		<a href="tasks/tasks.php"><div class="menu-item">Tasks</div></a>
 		<a href="blog/blog.php"><div class="menu-item">Blog</div></a>
+		<!--
 		<a href="rsg/rsg.html"><div class="menu-item">Random String Generator</div></a>
 		<a href="stopwatch/index.html"><div class="menu-item">Stopwatch</div></a>
 		<a href="snippets/snippets.php"><div class="menu-item">Snippets</div></a>
 		<a href="resume/resume.pdf"><div class="menu-item">Resume</div></a>
+		-->
 		<a href="login/logout.php"><div class="menu-item">Logout, <?php echo $_SESSION["username"] ?> </div></a>';
 	</body>
 </html>
