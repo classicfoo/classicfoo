@@ -5,11 +5,15 @@
  		<link rel="stylesheet" type="text/css" href="style.css?t=[timestamp]">
 	</head>
 
+	<?php
+		session_start();
+	?>
+
 	<nav class="navbar navbar-fixed-top"> 
 			<h1 id="pageHeading">Tasks</h1>
 
 			<ol class="breadcrumb">
-				<li><a href="../index.html">Home</a></li>
+				<li><a href="../index.php">Home</a></li>
 				<li class="active">Tasks</li>
 			</ol>	
 
@@ -38,7 +42,7 @@
 				
 			<?php
 				$db = new SQlite3('../data.db');
-				$results = $db->query('SELECT * FROM task order by due asc, id asc');
+				$results = $db->query("SELECT * FROM task where username='".$_SESSION['username']."' order by due asc, id asc;" );
 				while ($row = $results->fetchArray()) {
 					$id = $row['id'];
 					$subject = $row['subject'];

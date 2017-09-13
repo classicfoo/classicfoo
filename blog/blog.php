@@ -11,7 +11,7 @@
 			<h1>Microblog</h1>		
 			<a href="addblog.html"><button type='button' id="addPost" class=' btn btn-primary'>Post</button></a>
 			<ol class="breadcrumb">
-				<li><a href="../index.html">Home</a></li>
+				<li><a href="../index.php">Home</a></li>
 				<li class="active">Microblog</li>
 			</ol>
 		</nav>
