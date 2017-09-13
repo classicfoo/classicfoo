@@ -1,7 +1,11 @@
-<?php session_start(); ?>
+<?php
+	session_start();
+	if(!isset($_SESSION['username'])) {
+		header('Location: login/login.html');
+	}
+?>
 
 <!DOCTYPE html>
-
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width">
@@ -17,11 +21,6 @@
 		<a href="stopwatch/index.html"><div class="menu-item">Stopwatch</div></a>
 		<a href="snippets/snippets.php"><div class="menu-item">Snippets</div></a>
 		<a href="resume/resume.pdf"><div class="menu-item">Resume</div></a>
-		<?php
-			if(isset($_SESSION['username'])) {
-				echo '<a href="login/logout.php"><div class="menu-item">Logout, '. $_SESSION["username"].'</div></a>';
-			}
-		?>
+		<a href="login/logout.php"><div class="menu-item">Logout, <?php echo $_SESSION["username"] ?> </div></a>';
 	</body>
-
 </html>
