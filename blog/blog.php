@@ -13,16 +13,17 @@
 	</head>
 	
 	<body class="center">
-		<div>
-		<nav class="navbar navbar-fixed-top center"> 
-			<h1>Microblog</h1>		
-			<a href="addblog.html"><button type='button' id="addPost" class=' btn btn-primary'>Post</button></a>
-			<ol class="breadcrumb">
-				<li><a href="../index.php">Home</a></li>
-				<li class="active">Microblog</li>
-			</ol>
+
+		<nav class="navbar navbar-fixed-top ">
+			<div id="container" class="center">
+				<h1>Microblog</h1>		
+				<a href="addblog.html"><button type='button' id="addPost" class=' btn btn-primary'>Post</button></a>
+				<ol class="breadcrumb">
+					<li><a href="../index.php">Home</a></li>
+					<li class="active">Microblog</li>
+				</ol>
+			</div>
 		</nav>
-		</div>
 		
 		<div id="padding_above_first_post"></div>
 		

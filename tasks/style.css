@@ -30,3 +30,11 @@ nav {
 #subject {
 	margin-top:10px;
 }
+
+#view_task_content {
+	margin-top:20px;
+	border:0px;
+	padding:20px 0px 20px 0px;
+	margin:0px 0px 0px -5px;
+	background-color:white;
+}

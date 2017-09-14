@@ -8,31 +8,33 @@ h1 {
 }
 
 body {
-	padding:136 20 0 20;
+	padding-left:20px;
+	padding-right:20px;
 }
+
 
 .center {
 	max-width:600;
-	max-height:90;
 	margin-left:auto;
 	margin-right:auto;
 }
 
+
 nav {
 	background-color:white;
-	padding:20 20 100 20;
+	padding:20px 20px 0px 20px;
+	width:100%;
 }
 
 .breadcrumb {
 	margin-bottom:0;
-	margin:10 0 10 0;
+	margin:10 0 20 0;
 }
 
 .post {
 	background-color:aliceblue;
 	max-height:90px;
 	overflow:hidden;
-	//white-space: nowrap;
     text-overflow: ellipsis;
 }
 
