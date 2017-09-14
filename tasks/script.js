@@ -72,5 +72,20 @@ if($(".default-due").length > 0){
 	});
 }
 
+//set padding top of body depending on height of navbar
+var nav_body_height = $('nav').height();
+var nav_padding = 20;
+var nav_border_bottom = 1;
+var body_padding_top = nav_body_height + nav_padding + nav_border_bottom;
+$('body').css("padding-top", body_padding_top);
 
 
+//make shadow on bottom of nav if not at top
+
+$(window).scroll(function() {
+	if($(window).scrollTop() !== 0) {
+		$('nav').css("box-shadow","0px 1px 20px 3px rgba(0,0,0,.075)");
+	} else {
+		$('nav').css("box-shadow","");
+	} 
+});

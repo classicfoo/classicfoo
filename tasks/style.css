@@ -3,7 +3,7 @@
 }
 
 body {
-	padding: 180 20 20 20;
+	padding: 180px 20px 20px 20px;
 } 
 
 #tasklist {
@@ -16,7 +16,7 @@ body {
 
 nav {
 	background-color:white;
-	padding: 20 20 0 20;
+	padding: 20px 20px 0px 20px;
 	border-bottom-width:0;
 }
 
