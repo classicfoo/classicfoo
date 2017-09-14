@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- 		<link rel="stylesheet" type="text/css" href="style.css?t=[timestamp]">
+ 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 
 
@@ -26,10 +26,10 @@
 
 	
 		<form action="addtask.php" method="POST">
-			Subject <br> <br> <input type="text" name="subject" style="width:100%" autofocus> <br> <br>
-			Due <br> <br> <input type="date" id="due" class="default-due" name="due"> <br> <br>
-			Contents <br> <br> <textarea rows="10" style="width:100%" name="contents"></textarea> <br> <br>
-			<input type="submit" value="Submit">
+			Subject <input type="text" id="subject" name="subject" style="width:100%" autofocus> <br> <br>
+			Due <input type="date" id="due" class="default-due" name="due"> <br> <br>
+			<input type="submit" class="btn btn-primary" value="Submit">
+			<input type="button" class="btn btn-default" value="Cancel" onclick="window.location='tasks.php'">
 		</form>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="script.js"></script>
