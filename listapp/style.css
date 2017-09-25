@@ -1,0 +1,16 @@
+body {
+    font-family:sans-serif;
+}
+
+.btn {
+    background-color: #7291d6;
+    padding:10px;
+    display:inline-block;
+    border-radius:5px;
+    color:white;
+}
+
+.input {
+    //display:block;
+    margin-top: 3px;
+}

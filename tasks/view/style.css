@@ -1,0 +1,27 @@
+
+body{
+	padding:20px;
+}
+
+h1 {
+	margin:0px;
+	padding-bottom:10px;
+}
+
+#actions {
+	padding-bottom:10px;
+}
+
+th,td {
+	padding:10px;
+	text-align:left;
+}
+
+table, tr, td, th{
+	border:1px solid black;
+	border-collapse:collapse;
+}
+
+#btnBack {
+	margin-top:20px;
+}
