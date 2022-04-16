@@ -1,2 +1,2 @@
 # classicfoo
-My personal website. [classicfoo.xyz](http://www.classicfoo.xyz)
+[Random Names](random_names/nenox
