@@ -1,2 +1,2 @@
 # classicfoo
-[Random Names](random_names/nenox
+[Random Names](random_names/renox_rng.html)
