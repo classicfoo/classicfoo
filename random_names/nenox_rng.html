@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width" charset="UTF-8">
+
+ 		<link rel="stylesheet" type="text/css" href="style.css?t=[timestamp]">
+	
+	<body onload="generate()">
+
+		<h2>Nenox Random Name Generator</h2>
+
+		<p>Use the below letters and let it prompt you to make a cool name out of it. E.g. NKQXI might be "Nenox".</p>
+		<h3>Result</h3>
+		<div id="resultContainer">
+			<div id="result"></div>
+		</div>
+
+		<h3>Parameters</h3>
+		<div id="contents">
+			<div id="fieldName"> Length </div> <input type="text" id="inputLength" class="newline" value=5>
+			<div></div>
+			<div id="fieldName"> Characters </div> <textarea id="inputString" class="newline">ABCDEFGHIJKLMNOPQRSTUVWXYZ</textarea>
+
+			<input id="generate" type="button" value="Generate" onclick="generate() "autofocus> 
+		</div>
+
+		<!--<a href="../index.html">Back</a>-->
+
+	 	<script src="script.js"></script>
+	</body>
+</html>
